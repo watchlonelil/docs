@@ -29,6 +29,8 @@ export default defineConfig({
     ],
   },
 
+  lastUpdated: true,
+
   head: [
     [
       "script",
