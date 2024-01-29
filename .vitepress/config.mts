@@ -40,5 +40,11 @@ export default defineConfig({
         "data-domain": "docs.watch.lonelil.com",
       },
     ],
+    [
+      "meta",
+      {
+        name: "darkreader-lock",
+      },
+    ],
   ],
 });
