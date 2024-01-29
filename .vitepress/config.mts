@@ -6,6 +6,8 @@ export default defineConfig({
   description: "Docs for watch.lonelil.com",
 
   srcDir: "src",
+  lastUpdated: true,
+  cleanUrls: true,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -27,9 +29,11 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/watchlonelil/docs" },
     ],
-  },
 
-  lastUpdated: true,
+    search: {
+      provider: "local"
+    },
+  },
 
   head: [
     [
