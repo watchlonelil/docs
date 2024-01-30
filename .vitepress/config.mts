@@ -9,6 +9,10 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
 
+  sitemap: {
+    hostname: "https://docs.watch.lonelil.com",
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -33,6 +37,14 @@ export default defineConfig({
 
     search: {
       provider: "local",
+    },
+
+    editLink: {
+      pattern: "https://github.com/watchlonelil/docs/edit/main/docs/:path",
+    },
+
+    footer: {
+      message: "watch.lonelil.com",
     },
   },
 
