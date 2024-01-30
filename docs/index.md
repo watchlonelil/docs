@@ -7,11 +7,11 @@ hero:
   tagline: "Docs for watch.lonelil.com"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: View Extension Introduction
+      link: /extension/introduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: View Extension Installation
+      link: /extension/installation
 
 features:
   - title: Feature A

@@ -5,7 +5,7 @@ export default defineConfig({
   title: "watch.lonelil.com docs",
   description: "Docs for watch.lonelil.com",
 
-  srcDir: "src",
+  srcDir: "docs",
   lastUpdated: true,
   cleanUrls: true,
 
@@ -13,25 +13,26 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "Extension", link: "/extension/introduction" },
     ],
 
     sidebar: [
       {
-        text: "Examples",
+        text: "Extension",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Introduction", link: "/extension/introduction" },
+          { text: "Installation", link: "/extension/installation" },
         ],
       },
     ],
 
     socialLinks: [
+      { icon: "discord", link: "https://watch.lonelil.com/discord" },
       { icon: "github", link: "https://github.com/watchlonelil/docs" },
     ],
 
     search: {
-      provider: "local"
+      provider: "local",
     },
   },
 
