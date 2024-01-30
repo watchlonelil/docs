@@ -7,7 +7,7 @@ export default defineConfig({
 
   srcDir: "docs",
   lastUpdated: true,
-  #cleanUrls: true,
+  //cleanUrls: true,
 
   sitemap: {
     hostname: "https://docs.watch.lonelil.com",
