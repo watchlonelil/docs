@@ -2,11 +2,11 @@
 
 This guide provides step-by-step instructions on how to install the movie-web extension on various platforms.
 
-## Google Chrome
+## Chrome
 
 To install the movie-web extension on Google Chrome, please [click here](https://chromewebstore.google.com/detail/movie-web-extension/hoffoikpiofojilgpofjhnkkamfnnhmm).
 
-## Mozilla Firefox
+## Firefox
 
 To install the movie-web extension on Mozilla Firefox, please [click here](https://addons.mozilla.org/en-US/firefox/addon/movie-web-extension).
 

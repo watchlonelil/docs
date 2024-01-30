@@ -16,11 +16,11 @@ The movie-web extension is designed to provide users with the best quality strea
 
 The installation process for the movie-web extension varies depending on the device and browser you are using. Here are the steps to install the extension on different platforms:
 
-### Google Chrome
-You can follow the instructions provided in the [official Chrome installation guide](/extension/installation#google-chrome).
+### Chrome
+You can follow the instructions provided in the [official Chrome installation guide](/extension/installation#chrome).
 
-### Mozilla Firefox
-For Firefox, you can refer to the [official Firefox installation guide](/extension/installation#mozilla-firefox).
+### Firefox
+For Firefox, you can refer to the [official Firefox installation guide](/extension/installation#firefox).
 
 ### Android
 For Android devices, you can follow the instructions provided in the [official Android installation guide](/extension/installation#android).
