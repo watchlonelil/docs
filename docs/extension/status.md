@@ -14,13 +14,13 @@ The `failed` status means that the extension failed to respond. If you encounter
 
 The `disallowed` status indicates that the extension is not enabled on this page. To enable it, open the extension window and press the power button. Here's a screenshot for your reference:
 
-![Power Button](power.png)
+![Power Button](/extension/power.png)
 
 ## No Perms
 
 The `noperms` status means that the extension does not have the necessary permissions to perform its tasks. To grant the necessary permissions, open the extension window and press the 'Grant Permission' button. Here's a screenshot for your reference:
 
-![Grant Permission Button](permission.png)
+![Grant Permission Button](/extension/permission.png)
 
 ## Outdated
 
