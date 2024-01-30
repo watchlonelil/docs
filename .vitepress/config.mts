@@ -26,6 +26,7 @@ export default defineConfig({
         items: [
           { text: "Introduction", link: "/extension/introduction" },
           { text: "Installation", link: "/extension/installation" },
+          { text: "Status", link: "/extension/status" },
         ],
       },
     ],
