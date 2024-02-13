@@ -55,7 +55,9 @@ jobs:
             exit 1
           fi
     
-          echo $FILE > .vitepress/dist/SEARCH_INDEX_PATH
+          FILENAME=$(basename $FILE)
+    
+          echo $FILENAME > .vitepress/dist/SEARCH_INDEX_PATH
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
