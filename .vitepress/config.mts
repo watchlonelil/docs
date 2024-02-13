@@ -37,6 +37,9 @@ export default defineConfig({
     ],
 
     search: {
+      options: {
+        detailedView: true,
+      },
       provider: "local",
     },
 
