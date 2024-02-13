@@ -46,6 +46,17 @@ jobs:
           pnpm build
           touch .vitepress/dist/.nojekyll
 
+      - name: Expose search index path
+        run: |
+          FILE=$(find .vitepress/dist/assets/chunks -name '@localSearchIndexroot*')
+    
+          if [ -z "$FILE" ]; then
+            echo "File not found"
+            exit 1
+          fi
+    
+          echo $FILE > .vitepress/dist/SEARCH_INDEX_PATH
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
