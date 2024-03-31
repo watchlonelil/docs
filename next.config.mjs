@@ -5,6 +5,7 @@
 await import("./src/env.js");
 
 import { guider } from "@neato/guider";
+import million from "million/compiler";
 
 const withGuider = guider({
   // The location of your theme file, created in the next step
@@ -12,7 +13,7 @@ const withGuider = guider({
 });
 
 /** @type {import("next").NextConfig} */
-const config = {
+const nextConfig = {
   reactStrictMode: true,
   output: "export",
   images: {
@@ -20,4 +21,12 @@ const config = {
   },
 };
 
-export default withGuider(config);
+const millionConfig = {
+  auto: true, // if you're using RSC: auto: { rsc: true },
+};
+
+export default million.next(
+  //@ts-expect-error
+  withGuider(nextConfig),
+  millionConfig
+);
