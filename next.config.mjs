@@ -15,6 +15,9 @@ const withGuider = guider({
 const config = {
   reactStrictMode: true,
   output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default withGuider(config);
