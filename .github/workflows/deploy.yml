@@ -1,4 +1,4 @@
-name: Deploy VitePress site to Pages
+name: docs-deploy
 
 on:
   push:
@@ -21,13 +21,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
           version: 8
-          run_install: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -36,33 +33,21 @@ jobs:
           cache: "pnpm"
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
+        with: 
+          static_site_generator: next
 
       - name: Install dependencies
         run: pnpm i
 
-      - name: Build with VitePress
+      - name: Build
         run: |
           pnpm build
-          touch .vitepress/dist/.nojekyll
-
-      - name: Expose search index path
-        run: |
-          FILE=$(find .vitepress/dist/assets/chunks -name '@localSearchIndexroot*')
-    
-          if [ -z "$FILE" ]; then
-            echo "File not found"
-            exit 1
-          fi
-    
-          FILENAME=$(basename $FILE)
-    
-          echo $FILENAME > .vitepress/dist/SEARCH_INDEX_PATH
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: ./out
 
   deploy:
     environment:
